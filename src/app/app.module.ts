@@ -7,21 +7,21 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { LayoutModule } from '@angular/cdk/layout';
 
 // all app modules
-import { MaterialModule, CrudModule } from './_modules/index';
+import { MaterialModule, CrudModule } from './_modules';
 import { routing } from './app-routing.module';
 
 // all guards
 import { AuthGuard } from './_guards/auth.guard';
 
-// all intercepters
+// all interceptors
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 
 // all services
-import { AuthenticationService, DummyService, FileService } from './_services/index';
+import { AuthenticationService, DummyService, FileService } from './_services';
 
 // all components
 import { AppComponent } from './_components/app.component';
-import { LoginComponent, RegisterComponent, ForgotPasswordComponent, ResetPasswordComponent } from './_components/auth/index';
+import { LoginComponent, RegisterComponent, ForgotPasswordComponent, ResetPasswordComponent } from './_components/auth';
 import { NavigationComponent } from './_components/navigation/navigation.component';
 import { HomeComponent } from './_components/home/home.component';
 

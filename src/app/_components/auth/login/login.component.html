@@ -1,4 +1,5 @@
 <div class='container'>
+  <div class="col"><h3>Attention!</h3><p>This login form uses <b>http://local.brn.rajoriya/api.</b><br>Use at your own risk </p></div>
   <form #loginForm="ngForm" (ngSubmit)="onLogIn()">
     <mat-card>
       <mat-card-title>
@@ -7,10 +8,12 @@
       </mat-card-title>
       <mat-card-content>
         <mat-form-field>
-          <input matInput [(ngModel)]="email" name="email" pattern="^\S+@\S+$" required="required" placeholder="Email" />
+          <label for="email"></label>
+          <input matInput id="email" [(ngModel)]="email" name="email" pattern="^\S+@\S+$" required="required" placeholder="Email" />
         </mat-form-field>
         <mat-form-field>
-          <input matInput [(ngModel)]="password" name="password" required="required" pattern=".{6,30}" type="password" placeholder="Password" />
+          <label for="password"></label>
+          <input matInput id="password" [(ngModel)]="password" name="password" required="required" pattern=".{6,30}" type="password" placeholder="Password" autocomplete="on" />
         </mat-form-field>
         <a class="link" 
           [routerLink]="['/forgot-password']" 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DummyService } from '../../../_services/index';
-import { Dummy } from '../../../_models/index';
+import { DummyService } from '../../../_services';
+import { Dummy } from '../../../_models';
 
 @Component({
   selector: 'app-edit-dummy',

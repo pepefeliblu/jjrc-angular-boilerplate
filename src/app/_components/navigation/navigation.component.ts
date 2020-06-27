@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../../_services/authentication.service';
+import { AuthenticationService } from '../../_services';
 import { Router } from '@angular/router';
 
 @Component({
@@ -20,6 +20,6 @@ export class NavigationComponent implements OnInit {
 
   logout() {
     this.authService.logout();
-    this.router.navigate(['/login']);
+    this.router.navigate(['/login']).catch(e => console.error(e));
   }
 }
