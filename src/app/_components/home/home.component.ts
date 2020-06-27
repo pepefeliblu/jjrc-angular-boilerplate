@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
   
-  public title: string = 'Angular 7';
+  public title: string = 'Angular 10';
+  public logoSrc: string = './assets/angular_logo.png'
 
   constructor() { }
 
